@@ -1,0 +1,68 @@
+:root {
+    --maincontent-dark: #141922;
+    --positionflex-dark: #080B12;
+    --toolhover-grey: #D2D2D2;
+    --toolnothover-grey: #A3A3A3;
+    --sidebar-grey: #282828;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul, ol, menu {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+/* DEBUG */
+
+body div {
+    border: 2px solid red;
+    padding: 20px; 
+}
+
+.container__sidebar {
+    height: 100px;
+}
+
+/* Inizio CSS body */
+
+.container__body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.container__main {
+    flex-basis: 0;
+    flex-grow: 1;
+}
+
+.row {
+    display: flex;
+}
+
+.navbar {
+    flex-basis: 230px;
+}
+
+.main {
+    flex-basis: 0;
+    flex-grow: 1;
+    position: relative;
+}
+
+.banner {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 100px;
+    z-index: 999;
+    opacity: 0.5;
+}
