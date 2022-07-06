@@ -15,13 +15,22 @@ ul, ol, menu {
     list-style: none;
 }
 
+img {
+    width: 100%;
+}
+
 a {
     text-decoration: none;
     color: currentColor;
 }
+
+.column {
+    flex-direction: column;
+}
+
 /* DEBUG */
 
-body div, aside {
+body div, aside, nav {
     border: 2px solid red;
     padding: 10px; 
 }
@@ -57,6 +66,8 @@ body div, aside {
 
 .navbar {
     flex-basis: 230px;
+    background-color: black;
+    color: white;
 }
 
 .main {
@@ -73,6 +84,24 @@ body div, aside {
     height: 100px;
     z-index: 999;
     opacity: 0.5;
+}
+
+.first-list #home {
+    margin-bottom: 1rem;
+    background: url(../img/home.svg) no-repeat left top;
+    padding: 0px 0 3px 24px;
+}
+
+.first-list #search {
+    margin-bottom: 1rem;
+    background: url(../img/search.svg) no-repeat left top;
+    padding: 0px 0 3px 24px;
+}
+
+.first-list #library {
+    margin-bottom: 1rem;
+    background: url(../img/libreria.svg) no-repeat left top;
+    padding: 0px 0 3px 24px;
 }
 
 /* Sidebar */
