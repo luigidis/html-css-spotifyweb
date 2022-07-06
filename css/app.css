@@ -21,13 +21,21 @@ a {
 }
 /* DEBUG */
 
-body div {
+body div, aside {
     border: 2px solid red;
-    padding: 20px; 
+    padding: 10px; 
 }
 
 .container__sidebar {
     height: 100px;
+}
+
+.container__sidebar div {
+    border: solid 2px blue;
+}
+
+.central__sidebar__item div {
+    border: solid 2px green;
 }
 
 /* Inizio CSS body */
@@ -65,4 +73,19 @@ body div {
     height: 100px;
     z-index: 999;
     opacity: 0.5;
+}
+
+/* Sidebar */
+
+.container__sidebar {
+    justify-content: space-between;
+}
+
+.central__sidebar__item {
+    flex-grow: 1;
+    flex-direction: column;
+}
+
+.icons__player {
+    margin: 0 auto;
 }
