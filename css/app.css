@@ -8,6 +8,10 @@
     --colorgrey--buttonsoff: #7E7E7E;
 }
 
+i {
+    display: block;
+}
+
 * {
     font-family: 'Roboto', sans-serif;
 }
@@ -285,6 +289,8 @@ body div, aside, nav {
 .icons__player {
     color: white;
     font-size: 20px;
+    width: 60%;
+    text-align: center;
 }
 
 .icons__player .shuffle {
@@ -320,6 +326,7 @@ body div, aside, nav {
     color: white;
     font-weight: bold;
     font-size: 10px;
+    flex-basis: calc(10% - 40px);
 }
 
 /* Last slot sidebar */
