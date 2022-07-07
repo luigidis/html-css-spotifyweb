@@ -91,22 +91,7 @@ body div, aside, nav {
     padding-bottom: 6px;
 }
 
-.main {
-    flex-basis: 0;
-    flex-grow: 1;
-    position: relative;
-    overflow: auto;
-}
 
-.banner {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    height: 100px;
-    z-index: 999;
-    opacity: 0.5;
-}
 
 .first-list #home {
     margin-bottom: 8px;
@@ -206,7 +191,44 @@ body div, aside, nav {
     flex-basis: calc(65% -8px);
     font-weight: bold;
 }
+
+/* Banner */
+
+.main {
+    flex-basis: 0;
+    flex-grow: 1;
+    position: relative;
+    overflow: auto;
+}
+ /* QUI FORSE LO DEVO SPOSTARE CON LEFT RIGHT E TOP NON CON IL PADDING RICORDA */
+.banner {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 72px;
+    z-index: 999;
+    opacity: 0.5;
+    background-color: var(--positionflex-dark);
+    vertical-align: middle;
+    padding-top: 20px;
+    padding-right: 20px;
+}
+
+.banner .subscribe {
     
+    text-align: end;
+}
+
+.banner .subscribe a {
+    color: white;
+    border: 1px solid white;
+    border-radius: 40px;
+    padding: 10px 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 13px;
+}
 
 /* Sidebar */
 
