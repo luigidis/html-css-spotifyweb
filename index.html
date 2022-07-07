@@ -72,21 +72,50 @@
         
         
         <aside class="container__sidebar row">
-            <div class="sidebar__item">
-
+            <div class="sidebar__item row">
+                <figure class="playing__track__img">
+                    <img src="./img/sinister.jpeg" alt="Sinister Track">
+                </figure>
+                <div class="playing__track__author">
+                    <h4>Sinister</h4>
+                    <p>Brano Nome</p>
+                </div>
+                <div class="playing__track__interaction">
+                    <i class="fa-regular fa-heart heart"></i>
+                    <i class="fa-regular fa-folder"></i>
+                </div>
             </div>
             <div class="sidebar__item central__sidebar__item row">
                 <div class="icons__player">
-
+                    <i class="fa-solid fa-shuffle shuffle"></i>
+                    <i class="fa-solid fa-backward-step"></i>
+                    <i class="fa-regular fa-circle-play play"></i>
+                    <i class="fa-solid fa-forward-step"></i>
+                    <i class="fa-solid fa-rotate-right back"></i>
                 </div>
-                <div class="time__player">
-                    <!-- Qui la barra di scorrimento del brano avrà circa il 60% della width del contenitore -->
+                <div class="time__player row">
+                    <div class="time__pass font_time">
+                        0:25
+                    </div>
+                    <div class="progress__bar__border">
+                        <div class="progress__bar"></div>
+                    </div>
+                    <div class="time__total font_time">
+                        4:25
+                    </div>
                 </div>
             </div>
-            <div class="sidebar__item">
-
+            <div class="sidebar__item__last row">
+                <i class="fa-solid fa-bars item_1"></i>
+                <i class="fa-solid fa-display item_1"></i>
+                <i class="fa-solid fa-volume-high item_1"></i>
+                <div class="volume">
+                    <hr>
+                </div>
             </div>
         </aside>
+                    
+
         
     </div>
 </body>
