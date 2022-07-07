@@ -85,6 +85,8 @@ body div, aside, nav {
     flex-basis: 230px;
     background-color: black;
     color: white;
+    padding: 15px;
+    padding-bottom: 6px;
 }
 
 .main {
@@ -160,6 +162,10 @@ div h4 {
     padding-bottom: 15px;
 }
 
+.playlists {
+    flex-grow: 1;
+}
+
 .playlists li {
     font-size: var(--fontsize-paylist);
     padding-top: 20px;
@@ -178,6 +184,10 @@ div h4 {
     padding-right: 5px;
 }
 
+.side_item hr {
+    margin: 10px 0;
+}
+
 .author_profile {
     width: 105px;
     align-items: center;
@@ -185,10 +195,13 @@ div h4 {
 }
 
 .author_profile img {
-    flex-basis: calc(25% - 8px);
+    flex-basis: calc(35% - 8px);
+    background-color: grey;
+    border-radius: 20px;
+    aspect-ratio: 1;
 }
 .author_profile p {
-    flex-basis: calc(75% -8px);
+    flex-basis: calc(65% -8px);
     font-weight: bold;
 }
     
