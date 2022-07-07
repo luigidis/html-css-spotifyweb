@@ -4,7 +4,13 @@
     --toolhover-grey: #D2D2D2;
     --toolnothover-grey: #A3A3A3;
     --sidebar-grey: #282828;
+    --fontsize-paylist: 0.813rem;
 }
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -26,6 +32,10 @@ a {
 
 .column {
     flex-direction: column;
+}
+
+.font-bold {
+    font-weight: bold;
 }
 
 /* DEBUG */
@@ -64,6 +74,12 @@ body div, aside, nav {
     display: flex;
 }
 
+/* Navbar */
+
+.navbar figure img {
+    width: 140px;
+}
+
 .navbar {
     flex-basis: 230px;
     background-color: black;
@@ -74,6 +90,7 @@ body div, aside, nav {
     flex-basis: 0;
     flex-grow: 1;
     position: relative;
+    overflow: auto;
 }
 
 .banner {
@@ -87,28 +104,79 @@ body div, aside, nav {
 }
 
 .first-list #home {
-    margin-bottom: 1rem;
+    margin-bottom: 8px;
     background: url(../img/home.svg) no-repeat left top;
-    padding: 0px 0 3px 24px;
+    padding: 6px 0px 3px 30px;
+    font-size: 0.813rem;
+    font-weight: bold;
+    background-size: 25px;
+    margin-top: 20px;
 }
 
 .first-list #search {
-    margin-bottom: 1rem;
+    margin-bottom: 8px;
     background: url(../img/search.svg) no-repeat left top;
-    padding: 0px 0 3px 24px;
+    padding: 6px 0px 3px 30px;
+    font-size: 0.813rem;
+    font-weight: bold;
+    background-size: 25px;
 }
+    
 
 .first-list #library {
-    margin-bottom: 1rem;
+    margin-bottom: 8px;
     background: url(../img/libreria.svg) no-repeat left top;
-    padding: 0px 0 3px 24px;
+    padding: 6px 0px 3px 30px;
+    font-size: 0.813rem;
+    font-weight: bold;
+    background-size: 25px;
+    margin-left: 2px;
 }
+
+.size_plus {
+    font-size: 40px;
+}
+.playlists li {
+    font-size: var(--fontsize-paylist);
+    padding-top: 20px;
+}
+
+.playlists li:first-child {
+    font-size: 15px;
+    padding-top: 23px;
+}
+
+.playlists li:nth-child(2) {
+    font-size: 15px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+#third_child {
+    padding-top: 0px;
+}
+
+.line-hight-plus {
+    margin-bottom: 20px;
+}
+
+/* .playlists li {
+    font-size: var(--fontsize-paylist);
+    padding-top: 20px;
+} */
+
+
+
+/* .playlist li :not(:nth-child(3)) {
+    padding-top: 20px;
+} */
 
 /* Sidebar */
 
 .container__sidebar {
     justify-content: space-between;
 }
+    
 
 .central__sidebar__item {
     flex-grow: 1;
