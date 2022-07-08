@@ -90,6 +90,10 @@ a {
     width: 140px;
 }
 
+.spotifylogosmall {
+    display: none;
+}
+
 .navbar {
     flex-basis: 230px;
     background-color: black;
@@ -230,6 +234,7 @@ a {
     flex-grow: 1;
     position: relative;
     overflow: auto;
+    background-color: var(--maincontent-dark);
 }
  /* QUI FORSE LO DEVO SPOSTARE CON LEFT RIGHT E TOP NON CON IL PADDING RICORDA */
 .banner {
@@ -286,6 +291,7 @@ a {
 
 .playing__track__img {
     max-width: 45px;
+    flex-shrink: 0;
 }
 
 .playing__track__author {
@@ -329,7 +335,7 @@ a {
 }
 
 .icons__player .shuffle {
-    padding-left: 20px;
+    
     padding-right: 15px
 }
 .icons__player .play {
@@ -402,3 +408,77 @@ a {
     border-radius: 8px;
 }
 
+/* MEDIA QUERY */
+
+@media (max-width:765px) {
+    .navbar {
+       flex-basis: 50px;
+       width: 50px;
+       padding: 7px;
+       
+    }
+    
+    .spotifylogo {
+        display: none;
+    }
+
+    .spotifylogosmall {
+        display: block;
+        width: 30px;
+    }
+
+    .display_none, .side_item hr  {
+        display: none;
+        
+    }
+    
+    .first-list #home, .first-list #search, .first-list #library  {
+        padding-top: 31px;
+        padding-right: 10px;
+    }
+
+    .author_profile {
+        padding-top: 20px;
+    }
+
+    /* .side_item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    } */
+
+    .side_item {
+        margin-top: auto;
+        display: flex;
+        flex-direction: column;
+    }
+        
+
+    .side_item i {
+        text-align: center;
+        padding-left: 0;
+    }
+    
+
+    .playing__track__interaction {
+        padding-right: 0;
+        display: flex;
+        flex-direction: column;
+        row-gap: 7px;
+    }
+     
+    .playing__track__interaction heart {
+        margin-bottom: 7px;
+    }
+    
+    .time__player {
+        width: 80%;
+    }
+
+    .icons__player {
+        width: 80%;
+    }
+
+}
+    
+    
