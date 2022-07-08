@@ -78,8 +78,8 @@ a {
 .container__main {
     flex-basis: 0;
     flex-grow: 1;
-    
 }
+    
     
 
 .row {
@@ -235,7 +235,9 @@ a {
     position: relative;
     overflow-y: auto;
     background-color: var(--maincontent-dark);
+    height: calc(100vh - 100px);
 }
+
  /* QUI FORSE LO DEVO SPOSTARE CON LEFT RIGHT E TOP NON CON IL PADDING RICORDA */
 .banner {
     position: absolute;
@@ -284,8 +286,12 @@ a {
 
 .list_first_main_row {
     column-gap: 15px;
+    flex-wrap: wrap;
+    padding-left: 20px;
 }
-
+.list_first_main_row li {
+    padding-top: 15px;
+}
 .list_first_main_row li:first-child {
     position: relative;
 }
