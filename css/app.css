@@ -6,6 +6,7 @@
     --sidebar-grey: #282828;
     --fontsize-paylist: 0.813rem;
     --colorgrey--buttonsoff: #7E7E7E;
+    --genderfluid-grey: #797C80;
 }
 
 i {
@@ -77,7 +78,9 @@ a {
 .container__main {
     flex-basis: 0;
     flex-grow: 1;
+    
 }
+    
 
 .row {
     display: flex;
@@ -117,7 +120,7 @@ a {
 
 #home::before {
     content: '';
-    display: none;
+    display: block;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -126,9 +129,6 @@ a {
     background-color: green;
 }
 
-#home:hover ::before {
-    display: block;
-}
 
 .first-list #search {
     margin-bottom: 8px;
@@ -233,7 +233,7 @@ a {
     flex-basis: 0;
     flex-grow: 1;
     position: relative;
-    overflow: auto;
+    overflow-y: auto;
     background-color: var(--maincontent-dark);
 }
  /* QUI FORSE LO DEVO SPOSTARE CON LEFT RIGHT E TOP NON CON IL PADDING RICORDA */
@@ -266,8 +266,125 @@ a {
     font-size: 13px;
 }
 
+/* Conteiner Tracks */
+
+.margin_75 {
+    margin-top: 75px;
+    
+}
+
+.first__main__row {
+    display: flex;
+    justify-content: center;
+    color: var(--genderfluid-grey);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.list_first_main_row {
+    column-gap: 15px;
+}
+
+.list_first_main_row li:first-child {
+    position: relative;
+}
+
+.list_first_main_row li:first-child::before {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 30%;
+    right: 0;
+    background-color: green;
+    height: 3px;
+    border-radius: 5px;
+    display: block;
+    width: 30px;
+}
+
+.second__main__row, .third__main__row {
+    padding-left: 20px;
+    padding-right: 20px;
+    /* margin-top: 20px; */
+    flex-wrap: wrap;
+}
+
+#played {
+    color: white;
+    font-size: 26px;
+    /* flex-basis: 100%; */
+    margin-top: 20px;
+    padding-left: 20px;
+}
 
 
+.tracks_1 {
+    flex-basis: 100%;
+    
+    column-gap: 10px;
+    flex-wrap: wrap;
+}
+
+.track_col {
+    flex-basis: calc(16.6% - 60px);
+    text-align: center;
+    padding-top: 25px;
+}
+    
+
+.track_col img, .track_col_3 img {
+    width: 180px;
+    aspect-ratio: 1;
+}
+
+.track_col h5 {
+    padding-top: 10px;
+    color: var(--genderfluid-grey);
+    text-align: center;
+}
+
+.track_col h4, .track_col_3 h4 {
+    color: white;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.third__row__text {
+    padding-left: 20px;
+    margin-top: 45px;
+    flex-wrap: wrap;
+}
+
+
+.third__row__text h3 {
+    color: white;
+    font-size: 26px;
+}
+    
+
+.third__row__text p {
+    color: var(--genderfluid-grey);
+    margin-top: 12px;
+    
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.third__main__row {
+    column-gap: 10px;
+    flex-wrap: wrap;
+}
+
+.track_col_3 {
+    flex-basis: calc(16.6% - 20px);
+    padding-top: 25px;
+}
+    
+.rounded img {
+    border-radius: 100%;
+}    
+    
 
 /* Sidebar */
 
@@ -344,7 +461,7 @@ a {
 }
 
 .icons__player .back {
-    padding-right: 20px;
+    
     padding-left: 15px;
 }
 
@@ -466,11 +583,12 @@ a {
         flex-direction: column;
         row-gap: 7px;
     }
-     
-    .playing__track__interaction heart {
-        margin-bottom: 7px;
-    }
     
+    #home::before {
+        bottom: 10px;
+        left: -7px;
+    }
+
     .time__player {
         width: 80%;
     }
@@ -478,7 +596,13 @@ a {
     .icons__player {
         width: 80%;
     }
+    
+    
 
 }
+
+
+    
+
     
     
